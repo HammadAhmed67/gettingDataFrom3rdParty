@@ -13,17 +13,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class UserControlerController extends AbstractController
 {
     
-    // #[Route('/user/controler/{$id?}', name: 'app_user_controler')]
-    // public function index(): Response
-    // {
-        
-       
-
-        
-    //     return $this->render('user_controler/index.html.twig', [
-    //         'user' => $users ?? [],
-    //     ]);
-    // }
+   
     #[Route('/user/controller/{id?}', name: 'app_user_controler')]
     public function user_id(Request $request): Response 
     {
